@@ -1,2 +1,5 @@
 GRUB_CMDLINE_LINUX_DEFAULT=''
-GRUB_CMDLINE_LINUX="loglevel=3 udev.log_priority=3 quiet splash nvidia-drm.modeset=1 nowatchdog mitigations=off modprobe.blacklist=sp5100_tco,amdgpu"
+GRUB_CMDLINE_LINUX="fsck.mode=skip loglevel=3 udev.log_priority=3 quiet splash nvidia-drm.modeset=1 nowatchdog mitigations=off modprobe.blacklist=sp5100_tco,amdgpu"
+
+# xfs不需要fsck自检
+# 需要amdgpu请删除amdgpu
