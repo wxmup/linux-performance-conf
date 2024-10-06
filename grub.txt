@@ -1,0 +1,2 @@
+GRUB_CMDLINE_LINUX_DEFAULT=''
+GRUB_CMDLINE_LINUX="loglevel=3 udev.log_priority=3 quiet splash nvidia-drm.modeset=1 nowatchdog mitigations=off modprobe.blacklist=sp5100_tco,amdgpu"
