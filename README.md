@@ -35,6 +35,7 @@
 ```bash
 sudo modprobe tcp_bbr
 ```
+
 2. 输入命令，检查可用的拥堵控制算法。如果输出显示了bbr,就可以进行下一步。
 ```
 sysctl net.ipv4.tcp_available_congestion_control
@@ -44,7 +45,9 @@ sysctl net.ipv4.tcp_available_congestion_control
 ```bash
 sudo nano /etc/sysctl.d/99-sysctl.conf
 ```
+
 4. 编辑文件。复制[99-sysctl.conf.conf 文件](./99-sysctl.conf.conf)里的代码内容，并按住ctrl+shift+v粘贴。然后按下ctrl+o保存文件，ctrl+x退出文件编辑。
+
 5. 应用这些设置，然后重启系统。
 ```bash
 sudo sysctl --system
