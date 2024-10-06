@@ -44,8 +44,7 @@ sysctl net.ipv4.tcp_available_congestion_control
 ```bash
 sudo nano /etc/sysctl.d/99-sysctl.conf
 ```
-4. 编辑文件。复制[99-sysctl.conf.conf 文件](./99-sysctl.conf.conf)
-内容。然后ctrl+o保存。
+4. 编辑文件。复制[99-sysctl.conf.conf 文件](./99-sysctl.conf.conf)里的代码内容，并按住ctrl+shift+v粘贴。然后按下ctrl+o保存文件，ctrl+x退出文件编辑。
 5. 应用这些设置，然后重启系统。
 ```bash
 sudo sysctl --system
