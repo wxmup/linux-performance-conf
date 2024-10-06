@@ -35,11 +35,11 @@
 ```bash
 sudo modprobe tcp_bbr
 ```
-2. 检查可用的拥堵控制算法
+2. 输入命令，检查可用的拥堵控制算法。如果输出显示了bbr,就可以进行下一步。
 ```
 sysctl net.ipv4.tcp_available_congestion_control
 ```
-当出现了bbr,然后就可以进行下一步。
+
 3. 使用 `sudo` 和 `nano` 创建并编辑一个新的 `sysctl` 配置文件。例如，可以使用 `99-sysctl.conf` 这个文件名：
 ```bash
 sudo nano /etc/sysctl.d/99-sysctl.conf
