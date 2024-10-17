@@ -1,5 +1,7 @@
-GRUB_CMDLINE_LINUX_DEFAULT=''
+aGRUB_CMDLINE_LINUX_DEFAULT=''
 GRUB_CMDLINE_LINUX="fsck.mode=skip loglevel=3 udev.log_priority=3 quiet splash nvidia-drm.modeset=1 nowatchdog mitigations=off modprobe.blacklist=sp5100_tco,amdgpu"
+GRUB_DISABLE_OS_PROBER=false
 
-# xfs不需要fsck自检
+# 开启系统勘探 GRUB_DISABLE_OS_PROBER=false
+# xfs不需要fsck自检 fsck.mode=skip
 # 需要amdgpu请删除amdgpu
